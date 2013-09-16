@@ -1,0 +1,55 @@
+mongodb-13.2.0
+* Base image is base64-13.2.0 (2013Q2)
+* MongoDB version is 2.4.6
+* Quickbackup-mongodb version is 3.5
+* MMS agent version is 1.5.6
+* Removed repl-init script as it's no longer being supported
+
+mongodb-1.4.5
+* Base image is base64-1.8.4 (2012Q2)
+* MongoDB version is 2.2.2 (repl-init PATH fix DATASET-648)
+* Quickbackup-mongodb version is 2.7 (bind_ip more than one IP fix DATASET-662)
+* Added py-setuptools,simplejson,pymongo python modules
+* Added MMS mongodb monitoring agent (svc:/pkgsrc/mongodb-mms-agent:default)
+
+mongodb-1.4.0
+* Base image is base64-1.8.1 (2012Q2)
+* MongoDB version is 2.2.0
+* Quickbackup-mongodb version is 2.6
+* Installed htop,sdctools,ipf defaults
+
+mongodb-1.3.2
+* Fixed admin and root passes not getting set
+
+mongodb-1.3.1
+* Based off base-1.7.2 which includes /cores fix
+
+mongodb-1.3.0
+* Converted dataset to all pkgsrc (no mongo binaries in /mongodb)
+* Upgraded mongodb to 2.0.6 has sigpipe patch
+* Added quickbackup v2, fixes a few bugs, service rename to quickbackup-mongodb
+* Moved to new tpl structure
+* /etc/product and /etc/motd now implemented DATASET-493
+
+mongodb-1.2.4
+* Fixed qb user to be qb-part.of.zonename
+* Upgraded mongodb to 2.0.4
+* Added quickbackup backup utility
+
+mongodb-1.1.1
+* Added Replica Set support in SMF
+* Added dtrace_mongo.tar.gz PID provider DTrace scripts
+
+mongodb-1.0.9
+* Need to upgrade mongodb package to 2.0.3
+* Need to make logadm.conf for mongodb log rotation and -z
+* Need to delete /root/includes
+
+mongodb-1.0.6
+* Fixed mongodb.log to only show first start 
+* Fixed portal credentials to be mongodb_pw instead of admin_pw
+
+mongodb-1.0.4
+* MongoDB 2.0.1 64-bit
+* verbose = false in mongodb.conf (not set)
+* Fixed manpath for root and admin
