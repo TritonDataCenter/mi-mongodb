@@ -1,8 +1,9 @@
 name="mongodb"
 organization="Joyent"
 brand="Instance"
-version="13.2.1"
-description="A SmartOS 64-bit image that comes with MongoDB 2.4.6 pre-installed and pre-configured for maximum performance and scalability."
+version="13.3.1"
+description="A SmartOS 64-bit image that comes with MongoDB 2.4.9 pre-installed and pre-configured for maximum performance and scalability."
 homepage="http://wiki.joyent.com/jpc2/MongoDB+Instance";
 users="root admin mongodb"
 minram="1024"
+role="database"

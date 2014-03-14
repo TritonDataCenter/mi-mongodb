@@ -1,3 +1,10 @@
+mongodb-13.3.1
+* Base image is base64-13.3.1 (2013Q3)
+* MongoDB version is 2.4.9
+* Quickbackup-mongodb version is 3.5
+* MMS agent version is 1.5.6
+* Npm Manta installed by default
+
 mongodb-13.2.1
 * Base image is base64-13.2.1 (2013Q2)
 
